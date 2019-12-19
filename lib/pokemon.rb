@@ -20,7 +20,7 @@ class Pokemon
     sql = "SELECT * FROM pokemon WHERE id = ?"
     db.execute(sql, id).map do |row|
       Pokemon.new(row[0], row[1], row[2])
-    end.first  
-  end 
-  
+    end.first
+  end
+
 end
